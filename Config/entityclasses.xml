@@ -1,0 +1,42 @@
+<configs>	
+
+
+	<append xpath="/entity_classes">
+
+		<entity_class name="animalCatGuard" extends="animalMountainLion">
+
+			<property name="UserSpawnType" value="Menu"/>
+
+			<property name="Tags"
+					  value="entity,animal,mountainlion,perkAT04,perkAT05,special"/>
+
+			<!-- ACTIONS -->
+			<property name="AITask-1" value="Leap" data="legs=4"/>
+
+			<property name="AITask-2"
+					  value="ApproachAndAttackTarget"
+					  data="class=EntityZombie,20"/>
+
+			<property name="AITask-3" value="ApproachSpot"/>
+			<property name="AITask-4" value="Look"/>
+			<property name="AITask-5" value="Wander"/>
+
+			<property name="AITask-6" value=""/>
+			<property name="AITask-7" value=""/>
+			<property name="AITask-8" value=""/>
+			<property name="AITask-9" value=""/>
+
+			<!-- TARGET ACQUISITION -->
+			<property name="AITarget-1"
+					  value="SetNearestEntityAsTarget"
+					  data="class=EntityZombie,0,-10"/>
+
+			<property name="AITarget-2" value=""/>
+			<property name="AITarget-3" value=""/>
+			<property name="AITarget-4" value=""/>
+
+		</entity_class>
+	</append>
+	
+
+</configs>
