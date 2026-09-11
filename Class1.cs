@@ -33,7 +33,7 @@ public class CatGuardMod : IModApi
 
         foreach (var item in EntityClass.list.Dict)
         {
-            if (item.Value.entityClassName == "animalMountainLion")
+            if (item.Value.entityClassName == "animalCatGuard")
             {
                 entityClassId = item.Key;
                 break;
@@ -42,12 +42,12 @@ public class CatGuardMod : IModApi
 
         if (entityClassId == -1)
         {
-            Log.Out("[CatGuard] ERROR: animalMountainLion not found.");
+            Log.Out("[CatGuard] ERROR: animalCatGuard not found.");
             return;
         }
 
         Log.Out(
-            $"[CatGuard] Found animalMountainLion. Entity class ID: {entityClassId}"
+            $"[CatGuard] Found animalCatGuard. Entity class ID: {entityClassId}"
         );
 
         Vector3 spawnPosition =
@@ -60,7 +60,7 @@ public class CatGuardMod : IModApi
 
         if (lion == null)
         {
-            Log.Out("[CatGuard] ERROR: EntityFactory failed to create mountain lion.");
+            Log.Out("[CatGuard] ERROR: EntityFactory failed to create cat guard.");
             return;
         }
 
@@ -68,6 +68,6 @@ public class CatGuardMod : IModApi
 
         world.SpawnEntityInWorld(lion);
 
-        Log.Out("[CatGuard] SUCCESS: Mountain lion spawned!");
+        Log.Out("[CatGuard] SUCCESS: Cat Guard spawned!");
     }
 }
