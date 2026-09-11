@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net48</TargetFramework>
+		<LangVersion>latest</LangVersion>
+
+		<DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
+
+		<GameDir>C:\Users\arein\OneDrive\Desktop\Desktop\BoldRoast</GameDir>
+		<ManagedDir>$(GameDir)\7DaysToDie_Data\Managed</ManagedDir>
+	</PropertyGroup>
+
+	<ItemGroup>
+
+		<Reference Include="mscorlib">
+			<HintPath>$(ManagedDir)\mscorlib.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+
+		<Reference Include="netstandard">
+			<HintPath>$(ManagedDir)\netstandard.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+
+		<Reference Include="System">
+			<HintPath>$(ManagedDir)\System.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+
+		<Reference Include="System.Core">
+			<HintPath>$(ManagedDir)\System.Core.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+
+		<Reference Include="Assembly-CSharp">
+			<HintPath>$(ManagedDir)\Assembly-CSharp.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+
+		<Reference Include="LogLibrary">
+			<HintPath>$(ManagedDir)\LogLibrary.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+
+	</ItemGroup>
+
+</Project>
