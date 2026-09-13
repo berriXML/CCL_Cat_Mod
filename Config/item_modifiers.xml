@@ -1,0 +1,28 @@
+
+<configs>
+
+		
+		<!-- Bunny -->
+		<item_modifier name="modBunnyBestieCGM" installable_tags="head" modifier_tags="headDecoCGM" blocked_tags="noMods,clothing" type="attachment">
+			<property name="CustomIcon" value="sleeperRabbitAnimal"/>
+			<property name="DescriptionKey" value="modBunnyBestieCGMDesc"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="SellableToTrader" value="false"/>
+				<effect_group tiered="false">
+					<triggered_effect trigger="onSelfEquipStart" action="AttachPrefabToEntity" prefab="@:Entities/Animals/Rabbit/animalRabbitPrefab.prefab" parent_transform="Head" local_offset="0,0.1,0.075" local_rotation="0,0,0"> <!--(L-/R+,D-/U+,F+/B-)-->
+						<requirement name="!IsFPV"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfEquipStart" action="RemovePrefabFromEntity" prefab="Entities/Animals/Rabbit/animalRabbitPrefab">
+						<requirement name="IsFPV"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfEquipStop" action="RemovePrefabFromEntity" prefab="Entities/Animals/Rabbit/animalRabbitPrefab"/>
+				</effect_group>
+		</item_modifier>
+		
+		
+	
+	</append>
+	
+</configs>
