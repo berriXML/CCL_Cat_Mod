@@ -4,12 +4,15 @@
 	<append xpath="/entity_classes">
 
 		<entity_class name="animalCatGuard" extends="animalMountainLion">
-
 			<property name="UserSpawnType" value="Menu"/>
+			<property name="Mesh"
+					value="#@modfolder:Resources/catguard.unity3d?animalKittyGuard"/>
+
+			
 
 			<property name="Tags"
 					  value="entity,animal,mountainlion,perkAT04,perkAT05,special"/>
-
+			<property name="SizeScale" value="0.35"/>
 			<!-- ACTIONS -->
 			<property name="AITask-1" value="Leap" data="legs=4"/>
 
